@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX3000E
+D 8-Channel Level Translator
+K Level Translator Shifter
+F https://datasheets.maximintegrated.com/en/ds/MAX3000E-MAX3012.pdf
+$ENDCMP
+#
+$CMP MAX3372E
+D Low-Voltage Level Translator
+K Level Translator Shifter I2C SPI
+F https://datasheets.maximintegrated.com/en/ds/MAX3372E-MAX3393E.pdf
+$ENDCMP
+#
+#End Doc Library
