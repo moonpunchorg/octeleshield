@@ -883,4 +883,14 @@ Text Notes 5800 3750 0    60   ~ 0
 VCC is higher voltage side, VL is lower voltage side\nThe ~THREE-STATE~ pin is kept high for\nalways normal operation
 Text Notes 8400 4450 0    60   ~ 0
 4.32:1 voltage divider
+Text Notes 8950 5200 0    60   ~ 0
+Banana plugs for voltage probes
+Text Notes 8950 6350 0    60   ~ 0
+Banana plugs for voltage probes\n
+Text Notes 9500 3650 0    60   ~ 0
+K-type thermocouple\nsocket
+Text Notes 9500 2250 0    60   ~ 0
+K-type thermocouple\nsocket
+Text Notes 4150 4000 0    60   ~ 0
+Chip select\npins
 $EndSCHEMATC
