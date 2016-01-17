@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Overclocking telemetry shield for Arduino Yún"
-Date "2016-01-11"
+Date "2016-01-17"
 Rev "v1"
 Comp "Moonpunch.org"
 Comment1 "CERN OHL 1.2"
@@ -324,8 +324,6 @@ Text Label 6300 2650 2    60   ~ 0
 CS1
 Text Label 6300 2800 2    60   ~ 0
 CS2
-Text Label 6300 2200 2    60   ~ 0
-TC_ENABLE
 Text Label 3050 3650 1    60   ~ 0
 SCLK
 Text Label 3150 3650 1    60   ~ 0
@@ -344,15 +342,13 @@ NoConn ~ 4050 2450
 NoConn ~ 4050 2350
 NoConn ~ 4050 2250
 NoConn ~ 4050 2150
-Text Label 4050 3450 0    60   ~ 0
+Text Label 4050 3750 0    60   ~ 0
 CS1
-Text Label 4050 3350 0    60   ~ 0
+Text Label 4050 3650 0    60   ~ 0
 CS2
-Text Label 4050 3550 0    60   ~ 0
-TC_ENABLE
 NoConn ~ 4050 3250
-NoConn ~ 4050 3650
-NoConn ~ 4050 3750
+NoConn ~ 4050 3450
+NoConn ~ 4050 3350
 NoConn ~ 4050 3850
 NoConn ~ 4050 3950
 NoConn ~ 2000 2250
@@ -365,20 +361,20 @@ GND
 Text Label 2000 2850 2    60   ~ 0
 GND
 NoConn ~ 2000 2950
-Text Label 2000 3850 2    60   ~ 0
-A0
-Text Label 2000 3750 2    60   ~ 0
-A1
+Text Label 2000 3450 2    60   ~ 0
+A4
+Text Label 2000 3350 2    60   ~ 0
+A5
 NoConn ~ 2000 3650
 NoConn ~ 2000 3550
-NoConn ~ 2000 3450
-NoConn ~ 2000 3350
+NoConn ~ 2000 3850
+NoConn ~ 2000 3750
 Text Notes 6150 950  0    157  ~ 31
 Dual thermocouple measurement
 Text Label 7300 5850 2    60   ~ 0
-A0
+A4
 Text Label 7300 4700 2    60   ~ 0
-A1
+A5
 $Comp
 L +5V #PWR01
 U 1 1 569291E0
@@ -705,24 +701,9 @@ $EndComp
 NoConn ~ 10100 4800
 NoConn ~ 10100 5950
 NoConn ~ 9450 5950
-Wire Wire Line
-	7600 2350 7850 2350
-Wire Wire Line
-	7850 2350 7850 1500
-Wire Wire Line
-	7850 1500 8450 1500
-Wire Wire Line
-	7800 2350 7800 2900
-Connection ~ 7800 2350
-Wire Wire Line
-	7600 2500 7950 2500
-Wire Wire Line
-	7950 2500 7950 1600
+NoConn ~ 9450 4800
 Wire Wire Line
 	7950 1600 8450 1600
-Wire Wire Line
-	7900 2500 7900 3000
-Connection ~ 7900 2500
 Wire Wire Line
 	7600 2650 8050 2650
 Wire Wire Line
@@ -877,5 +858,29 @@ Wire Wire Line
 	10100 4700 10000 4700
 Wire Wire Line
 	10000 4700 10000 4900
-NoConn ~ 9450 4800
+Wire Wire Line
+	7950 2500 7950 1600
+Connection ~ 7900 2500
+Wire Wire Line
+	7600 2500 7950 2500
+Wire Wire Line
+	7900 2500 7900 3000
+Connection ~ 7800 2350
+Wire Wire Line
+	7800 2350 7800 2900
+Wire Wire Line
+	7600 2350 7850 2350
+Wire Wire Line
+	7850 1500 8450 1500
+Wire Wire Line
+	7850 2350 7850 1500
+Text Label 7600 2200 0    60   ~ 0
+3V3
+NoConn ~ 4050 3550
+Text Notes 1650 4600 0    60   ~ 0
+Power lines connected to each other within Arduino\n(so e.g. should not wire the two 5V pins to each other)
+Text Notes 5800 3750 0    60   ~ 0
+VCC is higher voltage side, VL is lower voltage side\nThe ~THREE-STATE~ pin is kept high for\nalways normal operation
+Text Notes 8400 4450 0    60   ~ 0
+4.32:1 voltage divider
 $EndSCHEMATC
