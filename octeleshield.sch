@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Overclocking telemetry shield for Arduino Yún"
-Date "2016-01-17"
+Date "2016-02-22"
 Rev "v1"
 Comp "Moonpunch.org"
 Comment1 "CERN OHL 1.2"
@@ -106,9 +106,11 @@ L MAX31855KASA U2
 U 1 1 5691F406
 P 8950 1700
 F 0 "U2" H 8600 2100 50  0000 L CNN
-F 1 "MAX31855KASA" H 9050 2100 50  0000 L CNN
+F 1 "MAX31855KASA+" H 9050 2100 50  0000 L CNN
 F 2 "Power_Integrations:SO-8" H 8950 1700 50  0001 C CIN
-F 3 "" H 8950 1700 50  0000 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8950 1700 50  0001 C CNN
+F 4 "Maxim Integrated" H 8950 1700 60  0001 C CNN "MFN"
+F 5 "MAX31855KASA+" H 8950 1700 60  0001 C CNN "MFPN"
 	1    8950 1700
 	-1   0    0    -1  
 $EndComp
@@ -117,9 +119,11 @@ L MAX31855KASA U3
 U 1 1 5691F493
 P 8950 3100
 F 0 "U3" H 8600 3500 50  0000 L CNN
-F 1 "MAX31855KASA" H 9050 3500 50  0000 L CNN
+F 1 "MAX31855KASA+" H 9050 3500 50  0000 L CNN
 F 2 "Power_Integrations:SO-8" H 8950 3100 50  0001 C CIN
-F 3 "" H 8950 3100 50  0000 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8950 3100 50  0001 C CNN
+F 4 "Maxim Integrated" H 8950 3100 60  0001 C CNN "MFN"
+F 5 "MAX31855KASA+" H 8950 3100 60  0001 C CNN "MFPN"
 	1    8950 3100
 	-1   0    0    -1  
 $EndComp
@@ -131,6 +135,11 @@ F 0 "P10" H 10000 1850 50  0000 C CNN
 F 1 "THERMOCOUPLE1" V 10100 1700 50  0000 C CNN
 F 2 "parts:Thermocouple" H 10000 1700 50  0001 C CNN
 F 3 "" H 10000 1700 50  0000 C CNN
+F 4 "RS Pro" H 10000 1700 60  0001 C CNN "MFN"
+F 5 "381-7564" H 10000 1700 60  0001 C CNN "MFPN"
+F 6 "RS Electronics" H 10000 1700 60  0001 C CNN "S1N"
+F 7 "381-7564" H 10000 1700 60  0001 C CNN "S1PN"
+F 8 "http://twen.rs-online.com/web/p/products/3817564/" H 10000 1700 60  0001 C CNN "S1L"
 	1    10000 1700
 	1    0    0    -1  
 $EndComp
@@ -142,6 +151,11 @@ F 0 "P11" H 10000 3250 50  0000 C CNN
 F 1 "THERMOCOUPLE2" V 10100 3100 50  0000 C CNN
 F 2 "parts:Thermocouple" H 10000 3100 50  0001 C CNN
 F 3 "" H 10000 3100 50  0000 C CNN
+F 4 "RS Pro" H 10000 3100 60  0001 C CNN "MFN"
+F 5 "381-7564" H 10000 3100 60  0001 C CNN "MFPN"
+F 6 "RS Electronics" H 10000 3100 60  0001 C CNN "S1N"
+F 7 "381-7564" H 10000 3100 60  0001 C CNN "S1PN"
+F 8 "http://twen.rs-online.com/web/p/products/3817564/" H 10000 3100 60  0001 C CNN "S1L"
 	1    10000 3100
 	1    0    0    -1  
 $EndComp
@@ -177,10 +191,10 @@ $Comp
 L R R5
 U 1 1 569229CC
 P 8800 4700
-F 0 "R5" H 8880 4700 50  0000 C CNN
-F 1 "33.2k" V 8800 4700 50  0000 C CNN
+F 0 "R5" V 8880 4700 50  0000 C CNN
+F 1 "33k" V 8800 4700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8730 4700 50  0001 C CNN
-F 3 "" H 8800 4700 50  0000 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RT_1-to-0.05_RoHS_L_6.pdf" H 8800 4700 50  0001 C CNN
 	1    8800 4700
 	0    1    1    0   
 $EndComp
@@ -191,7 +205,7 @@ P 8400 4900
 F 0 "R3" V 8480 4900 50  0000 C CNN
 F 1 "10k" V 8400 4900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 4900 50  0001 C CNN
-F 3 "" H 8400 4900 50  0000 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RT_1-to-0.05_RoHS_L_6.pdf" H 8400 4900 50  0001 C CNN
 	1    8400 4900
 	1    0    0    -1  
 $EndComp
@@ -202,7 +216,7 @@ P 7450 4700
 F 0 "R1" V 7530 4700 50  0000 C CNN
 F 1 "1k" V 7450 4700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 7380 4700 50  0001 C CNN
-F 3 "" H 7450 4700 50  0000 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RT_1-to-0.05_RoHS_L_6.pdf" H 7450 4700 50  0001 C CNN
 	1    7450 4700
 	0    1    1    0   
 $EndComp
@@ -211,9 +225,9 @@ L R R6
 U 1 1 56922AA3
 P 8800 5850
 F 0 "R6" V 8880 5850 50  0000 C CNN
-F 1 "33.2k" V 8800 5850 50  0000 C CNN
+F 1 "33k" V 8800 5850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8730 5850 50  0001 C CNN
-F 3 "" H 8800 5850 50  0000 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RT_1-to-0.05_RoHS_L_6.pdf" H 8800 5850 50  0001 C CNN
 	1    8800 5850
 	0    1    1    0   
 $EndComp
@@ -224,7 +238,7 @@ P 8400 6050
 F 0 "R4" V 8480 6050 50  0000 C CNN
 F 1 "10k" V 8400 6050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 8330 6050 50  0001 C CNN
-F 3 "" H 8400 6050 50  0000 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RT_1-to-0.05_RoHS_L_6.pdf" H 8400 6050 50  0001 C CNN
 	1    8400 6050
 	1    0    0    -1  
 $EndComp
@@ -235,7 +249,7 @@ P 7450 5850
 F 0 "R2" V 7530 5850 50  0000 C CNN
 F 1 "1k" V 7450 5850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 7380 5850 50  0001 C CNN
-F 3 "" H 7450 5850 50  0000 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RT_1-to-0.05_RoHS_L_6.pdf" H 7450 5850 50  0001 C CNN
 	1    7450 5850
 	0    1    1    0   
 $EndComp
@@ -244,9 +258,11 @@ L C C1
 U 1 1 56922DCB
 P 7750 4900
 F 0 "C1" H 7775 5000 50  0000 L CNN
-F 1 "10n" H 7775 4800 50  0000 L CNN
+F 1 "100n" H 7775 4800 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7788 4750 50  0001 C CNN
-F 3 "" H 7750 4900 50  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/40/X7RDielectric-777024.pdf" H 7750 4900 50  0001 C CNN
+F 4 "AVX" H 7750 4900 60  0001 C CNN "MFN"
+F 5 "06035C104KAT2A" H 7750 4900 60  0001 C CNN "MFPN"
 	1    7750 4900
 	1    0    0    -1  
 $EndComp
@@ -255,9 +271,11 @@ L C C2
 U 1 1 56922E06
 P 7750 6050
 F 0 "C2" H 7775 6150 50  0000 L CNN
-F 1 "10n" H 7775 5950 50  0000 L CNN
+F 1 "100n" H 7775 5950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7788 5900 50  0001 C CNN
-F 3 "" H 7750 6050 50  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/40/X7RDielectric-777024.pdf" H 7750 6050 50  0001 C CNN
+F 4 "AVX" H 7750 6050 60  0001 C CNN "MFN"
+F 5 "06035C104KAT2A" H 7750 6050 60  0001 C CNN "MFPN"
 	1    7750 6050
 	1    0    0    -1  
 $EndComp
@@ -312,7 +330,9 @@ P 6950 2400
 F 0 "U1" H 6500 2900 60  0000 C CNN
 F 1 "MAX3378E" H 7400 2900 60  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 6950 2400 60  0001 C CNN
-F 3 "" H 6950 2400 60  0000 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3372E-MAX3393E.pdf" H 6950 2400 60  0001 C CNN
+F 4 "Maxim Integrated" H 6950 2400 60  0001 C CNN "MFN"
+F 5 "MAX3378EEUD+" H 6950 2400 60  0001 C CNN "MFPN"
 	1    6950 2400
 	-1   0    0    -1  
 $EndComp
@@ -589,9 +609,11 @@ L C C3
 U 1 1 5693CDF9
 P 6650 1500
 F 0 "C3" H 6675 1600 50  0000 L CNN
-F 1 "0.1u" H 6675 1400 50  0000 L CNN
+F 1 "100n" H 6675 1400 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6688 1350 50  0001 C CNN
-F 3 "" H 6650 1500 50  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/40/X7RDielectric-777024.pdf" H 6650 1500 50  0001 C CNN
+F 4 "06035C104KAT2A" H 6650 1500 60  0001 C CNN "MFN"
+F 5 "06035C104KAT2A" H 6650 1500 60  0001 C CNN "MFPN"
 	1    6650 1500
 	0    1    1    0   
 $EndComp
@@ -600,9 +622,11 @@ L C C4
 U 1 1 5693CE58
 P 7250 1500
 F 0 "C4" H 7275 1600 50  0000 L CNN
-F 1 "0.1u" H 7275 1400 50  0000 L CNN
+F 1 "100n" H 7275 1400 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7288 1350 50  0001 C CNN
-F 3 "" H 7250 1500 50  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/40/X7RDielectric-777024.pdf" H 7250 1500 50  0001 C CNN
+F 4 "AVX" H 7250 1500 60  0001 C CNN "MFN"
+F 5 "06035C104KAT2A" H 7250 1500 60  0001 C CNN "MFPN"
 	1    7250 1500
 	0    1    1    0   
 $EndComp
@@ -633,7 +657,7 @@ L C C5
 U 1 1 5693E5FC
 P 9250 1100
 F 0 "C5" H 9275 1200 50  0000 L CNN
-F 1 "0.1u" H 9275 1000 50  0000 L CNN
+F 1 "100n" H 9275 1000 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9288 950 50  0001 C CNN
 F 3 "" H 9250 1100 50  0000 C CNN
 	1    9250 1100
@@ -644,7 +668,7 @@ L C C6
 U 1 1 5693E657
 P 9250 2500
 F 0 "C6" H 9275 2600 50  0000 L CNN
-F 1 "0.1u" H 9275 2400 50  0000 L CNN
+F 1 "100n" H 9275 2400 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9288 2350 50  0001 C CNN
 F 3 "" H 9250 2500 50  0000 C CNN
 	1    9250 2500
@@ -882,7 +906,7 @@ Power lines connected to each other within Arduino\n(so e.g. should not wire the
 Text Notes 5800 3750 0    60   ~ 0
 VCC is higher voltage side, VL is lower voltage side\nThe ~THREE-STATE~ pin is kept high for\nalways normal operation
 Text Notes 8400 4450 0    60   ~ 0
-4.32:1 voltage divider
+4.3:1 voltage divider
 Text Notes 8950 5200 0    60   ~ 0
 Banana plugs for voltage probes
 Text Notes 8950 6350 0    60   ~ 0
