@@ -3,7 +3,7 @@
   (general
     (links 57)
     (no_connects 1)
-    (area 101.524999 58.344999 155.015001 128.345001)
+    (area 98.122511 58.05424 155.488641 128.996441)
     (thickness 1.6)
     (drawings 15)
     (tracks 216)
@@ -15,7 +15,7 @@
   (page A4)
   (title_block
     (title "Overclocking telemetry shield for Arduino Yún")
-    (date 2016-02-22)
+    (date 2016-03-01)
     (rev v1)
     (company Moonpunch.org)
     (comment 1 "CERN OHL 1.2")
